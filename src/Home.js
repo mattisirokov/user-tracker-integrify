@@ -24,6 +24,7 @@ const Home = () => {
                 throw Error('404 - No data found')
             }
             return res.json();
+            //will not work without this statement!
         })
         .then(data=>{
             SetUsers(data);
