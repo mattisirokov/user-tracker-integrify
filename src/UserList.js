@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 const UserList = (props) => {
 const users = props.users;
-const title = props.title
 
 /*
 - Our user list component is a dynamic element, that shows a preview of our total user data. 
