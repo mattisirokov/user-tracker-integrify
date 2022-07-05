@@ -1,13 +1,122 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*
+CSS I will be using in this project, basic styles
+*/
+
+/*
+With the *, I am able to affect all of the elements on the list.
+*/
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat";
+  color: white;
+  background-color: black;
+}
+.navbar {
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 1px solid gray;
+}
+.navbar h1 {
+  color: orange; 
+}
+.navbar .links {
+  margin-left: auto;
+}
+.navbar a {
+  margin-left: 16px;
+  text-decoration: none;
+  padding: 6px;
+}
+.navbar a:hover {
+  color: orange;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+/*
+front page styling
+*/
+
+.content {
+  display: flex;
+  width: auto;
+  height: auto;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  flex-direction: row;
+  justify-content: center;
 }
+
+
+  .users-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+    margin: 20px 0;
+    border: 1px solid gray;
+    border-radius: 5px;
+    
+  }
+
+
+/*
+button styling
+*/
+
+.mainbutton {
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+.mainbutton:hover {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  margin-top: 20px;
+  border-radius: 0px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+}
+
+
+/*
+flex container that wraps to contain the user cards
+*/
+.user-list {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .content-left{}
+  
+ 
+
+
+
