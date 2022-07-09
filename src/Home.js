@@ -14,7 +14,7 @@ import useFetch from "./useFetch";
         import useFetch from "./useFetch";
         
         const Home = () => {
-          const { error, isPending, data: users } = useFetch('http://localhost:8000/users')
+          const { error, isPending, data: users } = useFetch('https://jsonplaceholder.typicode.com/users')
         
           return (
             <div className="home">
