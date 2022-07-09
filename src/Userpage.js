@@ -31,12 +31,14 @@ const Userdetails = () => {
           <p> company: {user.company.name}</p>
           <p> website: {user.website}</p> <br></br>
          
+         <div>
           <ul> <h3>address:</h3>
             <li>{user.address.street}</li>
             <li>{user.address.suite}</li>
-            <li>{user.address.city}</li>2
+            <li>{user.address.city}</li>
             <li>{user.address.zipcode}</li>
           </ul>
+          </div>
 
           
           </div>

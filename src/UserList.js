@@ -18,9 +18,9 @@ const users = props.users;
 
                 <div className="users-preview" key={users.id}>
                     <h2>Name:</h2>
-                    <h2>{users.name}</h2> <br></br>
-                    <p> Username: {users.username}</p> <br></br>
-                    <p> User id: {users.id}</p>
+                    <h2>{users.name}</h2> 
+                    <p className="italic">@{users.username}</p> <br></br>
+                    <p>{users.website}</p>
                     
                     <Link to={`/users/${users.id}`}>
                     <button className="mainbutton"> More information </button>
