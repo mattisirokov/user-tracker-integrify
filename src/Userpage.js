@@ -10,6 +10,8 @@ Will ask about that in the interview, should I get the chance.
 const Userdetails = () => {
   const { id } = useParams();
   const { data: user, error, isPending } = useFetch('https://jsonplaceholder.typicode.com/users/' + id);
+  
+
  
   
   
@@ -26,8 +28,15 @@ const Userdetails = () => {
           <p> Username: {user.username}</p> 
           <p> email: {user.email}</p>
           <p> phone: {user.phone}</p>
-          <p> website: {user.website}</p>
-          <p> street: {user.street}</p>
+          <p> company: {user.company.name}</p>
+          <p> website: {user.website}</p> <br></br>
+         
+          <ul> <h3>address:</h3>
+            <li>{user.address.street}</li>
+            <li>{user.address.suite}</li>
+            <li>{user.address.city}</li>2
+            <li>{user.address.zipcode}</li>
+          </ul>
 
           
           </div>
