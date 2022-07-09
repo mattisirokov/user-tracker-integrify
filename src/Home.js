@@ -1,8 +1,4 @@
 
-/*import { useState, useEffect } from "react";
-import UserList from "./UserList";
-import useFetch from "./useFetch";
-
     /*
         This is my home component, where most of the data is displayed. 
         In the home component I display the userList but also some backup screens such as:
